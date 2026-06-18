@@ -1,5 +1,6 @@
 import { ComplaintMappingRow } from "@/components/ComplaintMappingRow";
 import { CompetitorCard } from "@/components/CompetitorCard";
+import { IdeaCard } from "@/components/IdeaCard";
 import { InsightCard } from "@/components/InsightCard";
 import { OpportunityCard } from "@/components/OpportunityCard";
 import { PainPointCard } from "@/components/PainPointCard";
@@ -12,6 +13,7 @@ import {
   lovedPatterns,
   opportunities,
   painPoints,
+  productIdeas,
   sources,
 } from "@/data/research";
 
@@ -21,6 +23,7 @@ const navItems = [
   { label: "Complaints", href: "#complaints" },
   { label: "Competitors", href: "#competitors" },
   { label: "Opportunities", href: "#opportunities" },
+  { label: "Ideas", href: "#ideas" },
 ];
 
 export default function Home() {
@@ -160,6 +163,26 @@ export default function Home() {
                 key={opportunity.title}
                 opportunity={opportunity}
                 index={index}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="ideas" className="border-y border-slate-200 bg-white px-5 py-20 sm:px-6 md:py-28 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeader
+            kicker="Product ideas"
+            title="Build ideas that make the research useful."
+            description="These ideas translate the review patterns into simple product directions: help users ask better questions, trust answers, and help teams improve the knowledge base from real behavior."
+          />
+          <div className="grid gap-5 lg:grid-cols-2">
+            {productIdeas.map((idea, index) => (
+              <IdeaCard
+                key={idea.title}
+                idea={idea}
+                index={index}
+                featured={index === 0}
               />
             ))}
           </div>

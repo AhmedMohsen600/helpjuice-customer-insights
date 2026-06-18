@@ -24,6 +24,13 @@ export type Opportunity = {
   direction: string;
 };
 
+export type ProductIdea = {
+  title: string;
+  signal: string;
+  idea: string;
+  impact: string;
+};
+
 export type ComplaintMapping = {
   complaint: string;
   realNeed: string;
@@ -283,6 +290,81 @@ export const opportunities: Opportunity[] = [
       "A CEO-facing help center must look trustworthy without creating engineering drag.",
     direction:
       "Create a visual theme editor with brand tokens, mobile preview, accessibility checks, staging, and rollback.",
+  },
+];
+
+export const productIdeas: ProductIdea[] = [
+  {
+    title: "AI Agent for Document Questions",
+    signal:
+      "Customers do not always want to read an entire document to find one answer.",
+    idea:
+      "Let users ask a specific question, have AI read the full document context, and return a clear answer with the most relevant supporting passages.",
+    impact:
+      "Turns long documentation into a direct answer experience while preserving the value of the knowledge base.",
+  },
+  {
+    title: "Use Latest Frontend Technology",
+    signal:
+      "A premium knowledge product should feel fast, reliable, and easy to maintain.",
+    idea:
+      "Build the experience with React, Next.js, TypeScript, and Tailwind CSS for speed, type safety, clean iteration, and responsive UI quality.",
+    impact:
+      "Creates a modern foundation for customer-facing search, AI, analytics, and future product experiments.",
+  },
+  {
+    title: "Smarter Search Experience",
+    signal:
+      "Users complain when search misses obvious answers or returns too many weak results.",
+    idea:
+      "Improve ranking, typo tolerance, suggested results, filters, and no-result handling so users reach the right answer faster.",
+    impact:
+      "Reduces support friction before a user ever opens a ticket.",
+  },
+  {
+    title: "AI Answer Trust",
+    signal:
+      "AI answers are useful only when users and admins can trust where they came from.",
+    idea:
+      "Show document references, cited sections, freshness signals, and confidence cues beside each AI answer.",
+    impact:
+      "Makes AI feel accountable instead of mysterious.",
+  },
+  {
+    title: "Analytics-Based Content Improvements",
+    signal:
+      "Admins need to know what customers ask most and which content is not helping.",
+    idea:
+      "Surface common questions, failed searches, low-rated answers, and topics that need stronger documentation.",
+    impact:
+      "Turns analytics from passive reporting into a content improvement workflow.",
+  },
+  {
+    title: "Document Quality Score",
+    signal:
+      "Knowledge bases become stale when teams cannot see which documents are weak.",
+    idea:
+      "Score each document using clarity, missing information, outdated content, broken links, and user feedback.",
+    impact:
+      "Gives teams a simple way to prioritize what to review next.",
+  },
+  {
+    title: "Customer Feedback Loop",
+    signal:
+      "Helpful/not helpful feedback is one of the fastest ways to find content that needs attention.",
+    idea:
+      "Let users quickly rate answers and route that feedback into an admin review queue with context.",
+    impact:
+      "Connects customer frustration directly to article improvements.",
+  },
+  {
+    title: "Smart Content Suggestions",
+    signal:
+      "Repeated questions and failed searches reveal missing articles before a team notices manually.",
+    idea:
+      "Suggest new articles or updates based on recurring customer questions, ticket patterns, and search failures.",
+    impact:
+      "Helps the knowledge base improve itself from real customer behavior.",
   },
 ];
 
