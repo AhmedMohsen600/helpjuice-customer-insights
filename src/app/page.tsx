@@ -52,7 +52,7 @@ export default function Home() {
               <div className="mb-8 inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm text-slate-600">
                 Public reviews, competitor research, and customer discussions
               </div>
-              <h1 className="font-display max-w-4xl text-balance text-6xl font-normal leading-[0.95] tracking-normal text-slate-950 md:text-8xl">
+              <h1 className="font-display max-w-4xl text-balance text-5xl font-semibold leading-[1.02] tracking-normal text-slate-950 md:text-7xl">
                 What knowledge base customers really want.
               </h1>
               <p className="mt-8 max-w-2xl text-pretty text-lg leading-8 text-slate-600 md:text-xl">
@@ -197,7 +197,7 @@ export default function Home() {
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
               Final recommendation
             </p>
-            <h2 className="font-display mt-5 max-w-2xl text-balance text-5xl font-normal leading-[1.02] tracking-normal md:text-7xl">
+            <h2 className="font-display mt-5 max-w-2xl text-balance text-4xl font-semibold leading-[1.06] tracking-normal md:text-6xl">
               Become the easiest knowledge base to trust, maintain, and improve.
             </h2>
           </div>
