@@ -25,3 +25,7 @@ npm run build
 - `src/data/research.ts` contains the editable research content.
 - `src/components/` contains reusable presentation components.
 - `src/app/page.tsx` assembles the executive brief.
+
+## Typography
+
+The page uses `Instrument Sans` for body/UI text, `Instrument Serif` for large editorial headlines, and `IBM Plex Mono` for labels and numbering. This keeps the brief readable while giving the major statements a more handcrafted executive-report feel.

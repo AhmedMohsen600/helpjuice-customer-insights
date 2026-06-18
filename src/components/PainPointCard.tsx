@@ -8,7 +8,7 @@ export function PainPointCard({ painPoint }: PainPointCardProps) {
   return (
     <article className="rounded-2xl border border-slate-200 bg-white p-6 transition duration-200 hover:border-slate-300 hover:shadow-[0_18px_50px_rgba(15,23,42,0.07)]">
       <div className="flex items-start justify-between gap-5">
-        <h3 className="max-w-sm text-xl font-semibold tracking-tight text-slate-950">
+        <h3 className="max-w-sm text-xl font-semibold text-slate-950">
           {painPoint.pain}
         </h3>
         <span className="rounded-full border border-slate-200 px-3 py-1 text-xs font-medium text-slate-500">

@@ -18,7 +18,7 @@ export function InsightCard({ insight, index }: InsightCardProps) {
         )}
         <span className="h-2 w-2 rounded-full bg-slate-300 transition group-hover:bg-slate-500" />
       </div>
-      <h3 className="text-xl font-semibold tracking-tight text-slate-950">
+      <h3 className="text-xl font-semibold text-slate-950">
         {insight.title}
       </h3>
       <p className="mt-4 text-sm leading-6 text-slate-600">{insight.insight}</p>

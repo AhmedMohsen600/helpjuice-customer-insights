@@ -12,7 +12,7 @@ export function SectionHeader({ kicker, title, description }: SectionHeaderProps
           {kicker}
         </p>
       ) : null}
-      <h2 className="text-balance text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">
+      <h2 className="font-display text-balance text-4xl font-normal leading-[1.04] tracking-normal text-slate-950 md:text-6xl">
         {title}
       </h2>
       {description ? (

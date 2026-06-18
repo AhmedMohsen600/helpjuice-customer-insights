@@ -28,7 +28,7 @@ export default function Home() {
     <main className="min-h-screen bg-slate-50 text-slate-950">
       <header className="sticky top-0 z-20 border-b border-slate-200/80 bg-slate-50/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 sm:px-6 lg:px-8">
-          <a href="#top" className="text-sm font-semibold tracking-tight text-slate-950">
+          <a href="#top" className="text-sm font-semibold text-slate-950">
             Helpjuice Review Intelligence
           </a>
           <nav className="hidden items-center gap-6 md:flex">
@@ -52,7 +52,7 @@ export default function Home() {
               <div className="mb-8 inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm text-slate-600">
                 Public reviews, competitor research, and customer discussions
               </div>
-              <h1 className="max-w-4xl text-balance text-5xl font-semibold tracking-tight text-slate-950 md:text-7xl">
+              <h1 className="font-display max-w-4xl text-balance text-6xl font-normal leading-[0.95] tracking-normal text-slate-950 md:text-8xl">
                 What knowledge base customers really want.
               </h1>
               <p className="mt-8 max-w-2xl text-pretty text-lg leading-8 text-slate-600 md:text-xl">
@@ -66,7 +66,7 @@ export default function Home() {
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
                 The central finding
               </p>
-              <p className="mt-5 text-2xl font-semibold leading-snug tracking-tight text-slate-950">
+              <p className="mt-5 text-2xl font-semibold leading-snug text-slate-950">
                 The market gap is not more features. It is trust, clarity, and
                 maintainability.
               </p>
@@ -197,7 +197,7 @@ export default function Home() {
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
               Final recommendation
             </p>
-            <h2 className="mt-5 max-w-2xl text-balance text-4xl font-semibold tracking-tight md:text-6xl">
+            <h2 className="font-display mt-5 max-w-2xl text-balance text-5xl font-normal leading-[1.02] tracking-normal md:text-7xl">
               Become the easiest knowledge base to trust, maintain, and improve.
             </h2>
           </div>

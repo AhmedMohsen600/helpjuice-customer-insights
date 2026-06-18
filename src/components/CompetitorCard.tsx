@@ -7,7 +7,7 @@ type CompetitorCardProps = {
 export function CompetitorCard({ competitor }: CompetitorCardProps) {
   return (
     <article className="rounded-2xl border border-slate-200 bg-white p-6 transition duration-200 hover:border-slate-300 hover:shadow-[0_18px_50px_rgba(15,23,42,0.07)]">
-      <h3 className="text-xl font-semibold tracking-tight text-slate-950">
+      <h3 className="text-xl font-semibold text-slate-950">
         {competitor.name}
       </h3>
       <div className="mt-6 space-y-5">

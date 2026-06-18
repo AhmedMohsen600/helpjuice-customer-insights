@@ -12,7 +12,7 @@ export function OpportunityCard({ opportunity, index }: OpportunityCardProps) {
         <p className="font-mono text-sm text-slate-400">
           {String(index + 1).padStart(2, "0")}
         </p>
-        <h3 className="mt-3 text-2xl font-semibold tracking-tight text-slate-950">
+        <h3 className="mt-3 text-2xl font-semibold text-slate-950">
           {opportunity.title}
         </h3>
       </div>
