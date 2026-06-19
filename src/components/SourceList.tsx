@@ -13,11 +13,11 @@ export function SourceList({ sources }: SourceListProps) {
           href={source.href}
           target="_blank"
           rel="noreferrer"
-          className="group rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-600 transition duration-200 hover:border-slate-300 hover:text-slate-950"
+          className="group rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-600 transition duration-200 hover:border-slate-300 hover:text-slate-950"
         >
           <span>{source.label}</span>
-          <span className="ml-2 text-slate-300 transition group-hover:text-slate-500">
-            / source
+          <span className="ml-2 text-xs font-medium uppercase tracking-[0.12em] text-slate-300 transition group-hover:text-slate-500">
+            Source
           </span>
         </a>
       ))}

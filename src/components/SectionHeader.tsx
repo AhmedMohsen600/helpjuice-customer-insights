@@ -2,9 +2,18 @@ type SectionHeaderProps = {
   kicker?: string;
   title: string;
   description?: string;
+  level?: "h1" | "h2";
 };
 
-export function SectionHeader({ kicker, title, description }: SectionHeaderProps) {
+export function SectionHeader({
+  kicker,
+  title,
+  description,
+  level = "h2",
+}: SectionHeaderProps) {
+  const headingClassName =
+    "font-display text-balance text-3xl font-semibold leading-[1.08] tracking-normal text-slate-950 md:text-4xl";
+
   return (
     <div className="mx-auto mb-10 max-w-3xl text-center md:mb-14">
       {kicker ? (
@@ -12,9 +21,11 @@ export function SectionHeader({ kicker, title, description }: SectionHeaderProps
           {kicker}
         </p>
       ) : null}
-      <h2 className="font-display text-balance text-3xl font-semibold leading-[1.08] tracking-normal text-slate-950 md:text-5xl">
-        {title}
-      </h2>
+      {level === "h1" ? (
+        <h1 className={headingClassName}>{title}</h1>
+      ) : (
+        <h2 className={headingClassName}>{title}</h2>
+      )}
       {description ? (
         <p className="mx-auto mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 md:text-lg">
           {description}

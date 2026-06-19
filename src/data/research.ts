@@ -129,14 +129,14 @@ export const painPoints: PainPoint[] = [
   {
     pain: "Editor, table, and paste friction",
     meaning:
-      "Users are not asking for a prettier editor. They want tables, copied styles, images, and file references to behave predictably.",
+      "Users are not asking for a prettier editor. They want tables, copied styles, images, and file references to behave like normal work tools.",
     opportunity:
       "Create a docs-grade editor with spreadsheet-like tables, smart paste cleanup, reusable blocks, and large-document performance.",
   },
   {
     pain: "AI search lacks feedback and training",
     meaning:
-      "Admins want to see whether AI answers are used, whether they are correct, and how to improve them.",
+      "Admins want to know what users asked, what the AI used, whether the answer helped, and how to improve the next answer.",
     opportunity:
       "Build an AI Answer Lab with citations, usage analytics, thumbs up/down, unresolved-query clusters, and source-quality checks.",
   },
@@ -297,27 +297,27 @@ export const productIdeas: ProductIdea[] = [
   {
     title: "AI Agent for Document Questions",
     signal:
-      "Customers do not always want to read an entire document to find one answer.",
+      "Long articles create time-to-answer friction even when the right answer already exists.",
     idea:
-      "Let users ask a specific question, have AI read the full document context, and return a clear answer with the most relevant supporting passages.",
+      "Let users ask a question inside an article or document set. The AI reads the full context, answers in plain language, and links the supporting passages.",
     impact:
-      "Turns long documentation into a direct answer experience while preserving the value of the knowledge base.",
+      "Turns the knowledge base from a static archive into an answer layer without hiding the original documentation.",
   },
   {
     title: "Use Latest Frontend Technology",
     signal:
-      "A premium knowledge product should feel fast, reliable, and easy to maintain.",
+      "Customers judge knowledge software by speed, clarity, and reliability before they ever read the roadmap.",
     idea:
-      "Build the experience with React, Next.js, TypeScript, and Tailwind CSS for speed, type safety, clean iteration, and responsive UI quality.",
+      "Use React, Next.js, TypeScript, and Tailwind CSS to keep the interface fast, accessible, responsive, and easier to evolve.",
     impact:
-      "Creates a modern foundation for customer-facing search, AI, analytics, and future product experiments.",
+      "Gives search, AI answers, analytics, and admin workflows a polished foundation instead of feeling bolted on.",
   },
   {
     title: "Smarter Search Experience",
     signal:
       "Users complain when search misses obvious answers or returns too many weak results.",
     idea:
-      "Improve ranking, typo tolerance, suggested results, filters, and no-result handling so users reach the right answer faster.",
+      "Improve ranking, typo tolerance, synonyms, filters, suggested results, and no-result handling so users reach the right answer faster.",
     impact:
       "Reduces support friction before a user ever opens a ticket.",
   },
@@ -326,7 +326,7 @@ export const productIdeas: ProductIdea[] = [
     signal:
       "AI answers are useful only when users and admins can trust where they came from.",
     idea:
-      "Show document references, cited sections, freshness signals, and confidence cues beside each AI answer.",
+      "Show cited sections, source links, freshness signals, and a clear fallback when the answer cannot be supported by the document.",
     impact:
       "Makes AI feel accountable instead of mysterious.",
   },
@@ -335,7 +335,7 @@ export const productIdeas: ProductIdea[] = [
     signal:
       "Admins need to know what customers ask most and which content is not helping.",
     idea:
-      "Surface common questions, failed searches, low-rated answers, and topics that need stronger documentation.",
+      "Surface common questions, failed searches, low-rated answers, weak articles, and content owners with suggested next actions.",
     impact:
       "Turns analytics from passive reporting into a content improvement workflow.",
   },
@@ -344,7 +344,7 @@ export const productIdeas: ProductIdea[] = [
     signal:
       "Knowledge bases become stale when teams cannot see which documents are weak.",
     idea:
-      "Score each document using clarity, missing information, outdated content, broken links, and user feedback.",
+      "Score each document using clarity, completeness, age, broken links, user feedback, and whether AI can answer from it cleanly.",
     impact:
       "Gives teams a simple way to prioritize what to review next.",
   },
@@ -353,7 +353,7 @@ export const productIdeas: ProductIdea[] = [
     signal:
       "Helpful/not helpful feedback is one of the fastest ways to find content that needs attention.",
     idea:
-      "Let users quickly rate answers and route that feedback into an admin review queue with context.",
+      "Let users rate answers with reason tags like outdated, unclear, missing step, or wrong product, then route the issue into an admin review queue.",
     impact:
       "Connects customer frustration directly to article improvements.",
   },
@@ -362,7 +362,7 @@ export const productIdeas: ProductIdea[] = [
     signal:
       "Repeated questions and failed searches reveal missing articles before a team notices manually.",
     idea:
-      "Suggest new articles or updates based on recurring customer questions, ticket patterns, and search failures.",
+      "Suggest new articles or updates based on recurring questions, ticket patterns, negative ratings, and search failures.",
     impact:
       "Helps the knowledge base improve itself from real customer behavior.",
   },
