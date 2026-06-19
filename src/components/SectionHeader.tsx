@@ -12,7 +12,7 @@ export function SectionHeader({
   level = "h2",
 }: SectionHeaderProps) {
   const headingClassName =
-    "font-display text-balance text-3xl font-semibold leading-[1.08] tracking-normal text-slate-950 md:text-4xl";
+    "font-display text-balance text-3xl font-semibold leading-[1.08] tracking-normal text-slate-950 md:text-5xl";
 
   return (
     <div className="mx-auto mb-10 max-w-3xl text-center md:mb-14">
